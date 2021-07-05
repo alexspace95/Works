@@ -1,706 +1,836 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Source Sans Pro;
-}
-
-@font-face {
-    font-family: Source Sans Pro;
-    src: url(./font/SourceSansPro-Semibold.otf);
-}
-
-body {
-height: 640px;
-
-}
-
-.blue {
-    color: rgb(95, 175, 250);
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.hpic {
-    background-image: url(./pics/bg1.png);
-}
-
-.hpic .op { 
-    background-image: url(./pics/photo.png);
-}
-
-main {
-    padding: 20px 100px;
-    background-image: url(./pics/devices\ kopia.png); 
-    background-repeat: no-repeat;
-    background-position-x: 85%;
-    background-position-y: 105px ;
-}
-
-main header {
-    padding-bottom: 30px;
-}
-
-main header .label a{
-    font-size: 32px;
-    margin-right: 5px;
-    text-transform: uppercase;
-}
- 
-main header .label p{ 
-color: #cccccc;
-text-transform: uppercase;
-font-size: 13px;
-margin-top: 3px;
-}
-
-main header .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main header .head .label {
-    width: 5%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-main header .head nav {
-    width: 50%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-header nav ul {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-header nav ul li {
-    display: block;
-    position: relative;
-}
-
-header nav ul li a {
-    display: block;
-    padding: 20px 10px;
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid rgb(95, 175, 250);  
-    padding-bottom: 18px;   
-}
-
-header nav ul ol {
-    background-color: transparent ;
-    display: none;
-    position: absolute; 
-    right: 0;
-}
-
-header nav ul ol li {
-    white-space: nowrap;
-}
-
-header nav ul li:hover ol {
-    display: block;
-}
-
-
-
-main aside.main-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-}
-
-main aside.main-form .left {
-width: 40%;
-max-width: 400px;
-}
-
-main aside.main-form .left .blue {
-    font-size: 13px;
-    padding: 20px 0;
-}
-
-main aside.main-form .left h2 {
-    color: white;
-    font-size: 32px;
-    padding-bottom: 20px;
-}
-
-main aside.main-form .left .gray {
-    color: #cccccc;
-    font-size: 16px;
-    padding-bottom: 20px;
-}
-
-main aside.main-form .left .buttons{
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
-main aside.main-form .left .buttons input {
-    display: none;
-}
-
-main aside.main-form .left .buttons .dn{
-    cursor: pointer;
-    background-color: rgb(95, 175, 250);
-    border: 5px solid rgb(95, 175, 250);
-    border-radius: 3px;
-    padding: 7px 15px;
-    margin-right: 10px;
-    user-select: none;
-    color: white;
-}
-
-main aside.main-form .left .buttons .dn:active{
-    border: 1px solid rgb(75, 100, 200);
-    padding: 11px 19px;
-}
-
-main aside.main-form .left .buttons .vf{
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 11px 24px;
-    margin: 0 15px;
-    user-select: none;
-    color: white;
-}
-
-main aside.main-form .left .buttons .vf:active{
-    border: 1px solid gray;
-    padding: 11px 24px;
-}
-
-
-main aside.main-form .right {
-    width: 30%;
-    max-width: 380px;
-    padding: 20px;
-    background-color: white;
-    padding-bottom: 60px;
-}
-
-main aside.main-form .right h3 {
-    font-size: 16px;
-}
-
-main aside.main-form .right p {
-    color: #cccccc;
-    padding-top: 5px ;
-    font-weight: 13px;
-    padding-bottom: 15px;
-}
-
-
-main aside.main-form .right .text {
-    width: 95%;
-    padding: 11px;
-    margin: 10px 0;
-    outline: 0;
-    border: 1px solid #cccccc;
-}
-
-main aside.main-form .right input.message {
-    padding-bottom: 40px;
-}
-
-main aside.main-form .right .send .button {
-    display: none;
-}
-
-main aside.main-form .right .send{
-    cursor: pointer;
-    background-color: rgb(95, 175, 250);
-    border: 5px solid rgb(95, 175, 250);
-    border-radius: 3px;
-    padding: 8px 10px;
-    margin-right: 10px;
-    user-select: none;
-    color: white;
-    position: relative;
-    top: 20px;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-
-main aside.main-form .right .send:active  {
-    border: 1px solid rgb(65, 90, 180);
-    padding: 12px 14px;
-}
-
-section.list {
-   padding-bottom: 50px;
-}
-
-section.list .head {
-    padding: 20px;
-}
-
-section.list .head .blue {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-section.list .head h3 {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-section.list .head .bord {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    margin: 20px 48% 40px 48%;
-    border-bottom: 2px solid rgb(95, 175, 250);  
-}
-
-section.list .head .bord::after{
-    background-color: white;
-    width: 3px;
-    height: 4px;
-    content: '';
-    position: relative;
-    top: 2px;
-}
-
-section.list .main {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   padding: 0 8%;
-}
-
-section.list .main h3 {
-    margin-top: 50px;    
-    padding-bottom: 20px;
-}
-
-section.list .main .resp{
-    width: 22%;
-}
-
-section.list .main .resp .pic {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./pics/Monitor.png);
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-    padding: 25px 35px;
-}
-
-section.list .main .cust{
-    width: 22%;
-}
-
-section.list .main .cust .pic {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./pics/Gear.png);
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-    padding: 25px 35px;
-}
-
-section.list .main .ld{
-    width: 22%;
-}
-
-section.list .main .ld .pic {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./pics/Like.png);
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-    padding: 25px 35px;
-}
-
-section.list .main .mf{
-    width: 22%;
-}
-
-section.list .main .mf .pic {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./pics/Phone.png);
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-    padding: 25px 35px;
-}
-
-section.list .main p {
-    color: gray;
-}
-
-
-form {
-    background-color: #e4eeee;
-    padding: 50px;
-    font-size: 16px;
-}
-
-form .r{
-color: red;
-}
-
-form p,span {
-    text-transform: capitalize;
-}
-
-form input {
-    outline: none;
-}
-
-form .form {
-    background-color: white;
-    border-radius: 5px;
-}
-
-form .form h3 {
-    font-size: 24px;
-    padding: 25px;
-    text-transform: capitalize;
-}
-
-form .form .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-form .form .details label {
-    padding-left: 10px;
-    user-select: none;
-    border: 2px solid #ccc;
-    border-right: 0;
-    width: 25%;
-    padding: 10px;
-}
-
-form .form .details input{
-    display: none;
-}
-
-form .form .details label span:before{
-    content: '';
-    background-image: url(./pics/Check_circle_V_gray.png);
-    padding: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 10px;
-}
-
-form .form .details label input:checked+:before{
-    content: '';
-    background-image: url(./pics/Check_circle_V_green.png);
-}
-
-form .form .details label:last-child{
-    border-right: 2px solid #ccc;
-}
-
-form .form .details label:hover {
-    color: rgb(20, 160, 80) ;
-    background-color: rgb(252, 255, 252);
-    border-top: 1.5px solid #ccc;
-    border-bottom: 2.5px solid rgb(20, 160, 80);
-}
-
-form .form .table {
-    padding: 25px;
-}
-
-form .form .table h4{
-    font-size: 20px;
-    padding: 20px 0;
-    text-transform: capitalize;
-}
-
-form .form .table .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    user-select: none;
-}
-
-form .form .table .main input {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100%;
-    padding: 10px;
-}
-
-form .form .table .main .left {
-    width: 30%;
-}
-
-form .form .table .main .left p {
-padding: 5.65px 0;
-user-select: none;
-}
-
-form .form .table .main .left .cn:after{
-    content: '';
-    background-image: url(./pics/calendar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 10px;
-    position: relative;
-    top: 35px;
-    left: calc(100% - 142px) ;   
-}
-
-form .form .table .main .center {
-    width: 30%;
-}
-
-form .form .table .main .center select {
-width: 100%;
-font-size: 16px;
-font-weight: bold;
-padding: 8.8px 10px;
-margin:  0;
-border: 1px solid #ccc;
-outline: none;
-appearance: none;
-}
-
-form .form .table .main .center p{
-    margin: 5.5px 0;
-}
-
-form .form .table .main .center .at {
-    display: flex;
-    justify-content: flex-start;
-}
-
-form .form .table .main .center .ats{
-    border: 1px solid #ccc;
-    padding: 8.4px 10px;
-    border-radius: 3px;
-}
-
-form .form .table .main .center .at:after{
-    content: '';
-    background-image: url(./pics/triangle_Arrow_down.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 0 10px;
-    position: relative;
-    top: 35px;
-    left: calc(100% - 123px) ;    
-}
-
-form .form .table .main .center .place{
-    display: flex;
-    justify-content: space-between;    
-}
-
-form .form .table .main .center .place .city {
-    width: 48%;
-}
-
-form .form .table .main .center .place .state {
-    width: 48%;
-}
-
-form .form .table .main .center .os .butt {
-    background-color: #e4eeee;
-    border: 1px solid rgb(228, 238, 238) ;
-    border-radius: 3px;
-    display: flex;
-    justify-content: space-between;
-    padding: 9px;
-}
-
-form .form .table .main .center .os .butt label{
-    width: 50%;
-}
-
-form .form .table .main .center .os input {
-    width: 13px;
-}
-
-form .form .table .main .center .os input{
-    display: none;
-}
-
-form .form .table .main .center .os input:checked + :before {
-    background-image: url(./pics/Check_circle_green.png);
-background-repeat: no-repeat;
-background-position: center;
-    content: '';
-    
-}
-
-form .form .table .main .center .os span:before {
-content: '';
-padding: 0 10px;
-margin: 0 5px;
-background-image: url(./pics/Check_circle_gray.png);
-background-repeat: no-repeat;
-background-position: center;
-} 
-
-form .form .table .main .right {
-    width: 30%;
-}
-
-form .form .table .main .right p {
-    margin: 5.5px 0;
-}
-
-form .form .table .main .right .logo {
-    border: 1px solid #e4eeee;
-    background-color: #e4eeee;
-    border-radius: 3px;
-    padding: 4.87px;
-}
-
-form .form .table .main .right .log {
-    border: 0;
-    padding: 3px 10px;
-}
-
-form .order {
-    padding: 30px 0;
-    font-size: 12px;
-    color: #ccc;
-}
-
-form .form .table .buttons{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-form .form .table .buttons input{
-    display: none;
-}
-
-form .form .table .buttons label  {
-    padding: 10px 40px;
-    margin-top: 60px;
-    color: white;
-    user-select: none;
-    background-color: #c9c9c9;
-    margin-left:10px;
-    border: 1px solid #c9c9c9;
-    border-radius: 3px;
-    font-size: 18px;
-}
-
-form .form .table .buttons label span {
-    text-transform: uppercase;
-}
-
-form .form .table .buttons label.cont{
-    background-color: rgb(20, 160, 80);
-    border: 1px solid rgb(20, 160, 80);
-}
-
-form .form .table .buttons label .continue:after {
-    padding:0 10px;
-    margin-left: 5px;
-    content: '';
-    width: 10px;
-    height: 10px;
-    background-image: url(./pics/Arrow_Right.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-form .form .table .buttons label:active {
-    opacity: 0.8;
-    
-}
-
-
-
-footer {
-    padding: 20px 50px 20px 100px; 
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .get {
-    font-weight: lighter;
-    color: gray;
-}
-
-footer .buttons{    
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
-footer .buttons input {
-    display: none;
-}
-footer .buttons .dn{
-    cursor: pointer;
-    background-color: rgb(95, 175, 250);
-    border: 5px solid rgb(95, 175, 250);
-    border-radius: 3px;
-    padding: 7px 15px;
-    margin-right: 10px;
-    user-select: none;
-    color: white;
-}
-
-footer .buttons .dn:active{
-    border: 1px solid rgb(75, 100, 200);
-    padding: 11px 19px;
-}
-
-footer .buttons .vf{
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 11px 24px;
-    margin: 0 15px;
-    user-select: none;
-    color: white;
-}
-
-footer .buttons .vf:active{
-    border: 1px solid gray;
-    padding: 11px 24px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Source Sans Pro;
+        }
+        
+        @font-face {
+            font-family: Source Sans Pro;
+            src: url(./font/SourceSansPro-Semibold.otf);
+        }
+        
+        @media screen and (min-width:1020px) {
+            body {
+                height: 640px;
+            }
+        }
+        
+        .blue {
+            color: rgb(95, 175, 250);
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        
+        .hpic {
+            background-image: url(./pics/bg1.png);
+        }
+        
+        .hpic .op {
+            background-image: url(./pics/photo.png);
+        }
+        
+        main {
+            padding: 20px 30px;
+            background-image: url(./pics/devices\ kopia.png);
+            background-repeat: no-repeat;
+            background-position-x: 85%;
+            background-position-y: 105px;
+        }
+        
+        @media screen and (min-width:1020px) {
+            main {
+                padding: 20px 100px;
+            }
+        }
+        
+        header {
+            padding-bottom: 30px;
+        }
+        
+        header .label a {
+            font-size: 32px;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+        
+        header .label p {
+            color: #cccccc;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+        
+        @media screen and (min-width:500px) {
+            header .head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        header .head .label {
+            width: 5%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        @media screen and (max-width:500px) {
+            header .head .label {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (min-width:500px) {
+            header .head nav {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            header nav {
+                width: 30%;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        @media screen and (min-width:500px) {
+            header nav ul {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+        
+        header nav ul li {
+            display: block;
+            position: relative;
+        }
+        
+        header nav ul li a {
+            display: block;
+            padding: 20px 10px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:500px) {
+            header nav ul li a {
+                padding-left: 0;
+            }
+        }
+        
+        header nav ul li a:hover {
+            border-bottom: 2px solid rgb(95, 175, 250);
+            padding-bottom: 18px;
+        }
+        
+        @media screen and (max-width:500px) {
+            header nav ul li a:active {
+                border-bottom: 2px solid rgb(95, 175, 250);
+                padding-bottom: 18px;
+            }
+        }
+        
+        header nav ul ol {
+            background-color: transparent;
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        
+        header nav ul ol li {
+            white-space: nowrap;
+        }
+        
+        header nav ul li:hover ol {
+            display: block;
+        }
+        
+        @media screen and (max-width:500px) {
+            header nav ul ol {
+                left: 200px;
+                top: 0;
+                width: 65px;
+            }
+        }
+        
+        @media screen and (min-width:500px) {
+            .main-form {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+        
+        .main-form .left {
+            max-width: 400px;
+        }
+        
+        @media screen and (min-width:1020px) {
+            .main-form .left {
+                width: 40%;
+                max-width: 400px;
+            }
+        }
+        
+        .main-form .left .blue {
+            font-size: 13px;
+            padding: 20px 0;
+        }
+        
+        .main-form .left h2 {
+            color: white;
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+        
+        .main-form .left .gray {
+            color: #cccccc;
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+        
+        .main-form .left .buttons {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        
+        .main-form .left .buttons input {
+            display: none;
+        }
+        
+        .main-form .left .buttons .dn {
+            cursor: pointer;
+            background-color: rgb(95, 175, 250);
+            border: 5px solid rgb(95, 175, 250);
+            border-radius: 3px;
+            padding: 7px 15px;
+            margin-right: 10px;
+            user-select: none;
+            color: white;
+        }
+        
+        .main-form .left .buttons .dn:active {
+            border: 1px solid rgb(75, 100, 200);
+            padding: 11px 19px;
+        }
+        
+        .main-form .left .buttons .vf {
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 11px 24px;
+            margin: 0 15px;
+            user-select: none;
+            color: white;
+        }
+        
+        .main-form .left .buttons .vf:active {
+            border: 1px solid gray;
+            padding: 11px 24px;
+        }
+        
+        .main-form .right {
+            padding: 20px;
+            background-color: white;
+            padding-bottom: 60px;
+        }
+        
+        @media screen and (min-width:500px) {
+            .main-form .right {
+                margin-left: 20px;
+            }
+        }
+        
+        @media screen and (min-width:1020px) {
+            .main-form .right {
+                width: 30%;
+                max-width: 380px;
+            }
+        }
+        
+        .main-form .right h3 {
+            font-size: 16px;
+        }
+        
+        .main-form .right p {
+            color: #cccccc;
+            padding-top: 5px;
+            font-weight: 13px;
+            padding-bottom: 15px;
+        }
+        
+        .main-form .right .text {
+            width: 95%;
+            padding: 11px;
+            margin: 10px 0;
+            outline: 0;
+            border: 1px solid #cccccc;
+        }
+        
+        .main-form .right input.message {
+            padding-bottom: 40px;
+        }
+        
+        .main-form .right .send .button {
+            display: none;
+        }
+        
+        .main-form .right .send {
+            cursor: pointer;
+            background-color: rgb(95, 175, 250);
+            border: 5px solid rgb(95, 175, 250);
+            border-radius: 3px;
+            padding: 8px 10px;
+            margin-right: 10px;
+            user-select: none;
+            color: white;
+            position: relative;
+            top: 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        
+        .main-form .right .send:active {
+            border: 1px solid rgb(65, 90, 180);
+            padding: 12px 14px;
+        }
+        
+        @media screen and (min-width:500px) {
+            .list {
+                padding-bottom: 50px;
+            }
+        }
+        
+        .list .head {
+            padding: 20px;
+        }
+        
+        .list .head .blue {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .list .head h3 {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .list .head .bord {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            margin: 20px 48% 40px 48%;
+            border-bottom: 2px solid rgb(95, 175, 250);
+        }
+        
+        @media screen and (max-width:500px) {
+            .list .head .bord {
+                margin-left: 46%;
+            }
+        }
+        
+        .list .head .bord::after {
+            background-color: white;
+            width: 3px;
+            height: 4px;
+            content: '';
+            position: relative;
+            top: 2px;
+        }
+        
+        .list .main {
+            text-align: center;
+            padding: 0 8%;
+        }
+        
+        @media screen and (min-width:500px) {
+            .list .main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .list .main h3 {
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+        
+        @media screen and (max-width:500px) {
+            .list .main .resp,
+            .list .main .cust,
+            .list .main .ld,
+            .list .main .mf {
+                height: 250px;
+            }
+        }
+        
+        @media screen and (min-width:500px) {
+            .list .main .resp,
+            .list .main .cust,
+            .list .main .ld,
+            .list .main .mf {
+                width: 22%;
+            }
+        }
+        
+        .list .main .pic {
+            background-color: white;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #cccccc;
+            border-radius: 50px;
+            padding: 25px 35px;
+        }
+        
+        .list .main .resp .pic {
+            background-image: url(./pics/Monitor.png);
+        }
+        
+        .list .main .cust .pic {
+            background-image: url(./pics/Gear.png);
+        }
+        
+        .list .main .ld .pic {
+            background-image: url(./pics/Like.png);
+        }
+        
+        .list .main .mf .pic {
+            background-image: url(./pics/Phone.png);
+        }
+        
+        .list .main p {
+            color: gray;
+        }
+        
+        form {
+            background-color: #e4eeee;
+            padding: 25px;
+            font-size: 16px;
+        }
+        
+        @media screen and (min-width:1020px) {
+            form {
+                padding: 50px;
+            }
+        }
+        
+        form .r {
+            color: red;
+        }
+        
+        form p,
+        span {
+            text-transform: capitalize;
+        }
+        
+        form input {
+            outline: none;
+        }
+        
+        form .form {
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        form .form h3 {
+            font-size: 24px;
+            padding: 25px;
+            text-transform: capitalize;
+        }
+        
+        form .form .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        form .form .details label {
+            padding-left: 10px;
+            user-select: none;
+            border: 2px solid #ccc;
+            border-right: 0;
+            width: 25%;
+            padding: 10px;
+        }
+        
+        @media screen and (max-width:1020px) {
+            form .form .details label {
+                text-align: center;
+                min-height: 70px;
+                padding-top: 10px;
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            form .form .details label {
+                min-height: 100px;
+                text-align: right;
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+        
+        form .form .details input {
+            display: none;
+        }
+        
+        @media screen and (max-width:500px) {
+            form .form .details label span {
+                position: relative;
+                top: 8px;
+                right: 20px;
+            }
+        }
+        
+        form .form .details label span:before {
+            content: '';
+            background-image: url(./pics/Check_circle_V_gray.png);
+            padding: 8px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 10px;
+        }
+        
+        @media screen and (max-width:500px) {
+            form .form .details label span:before {
+                position: relative;
+                bottom: 18px;
+                left: 40px;
+            }
+        }
+        
+        form .form .details label input:checked+:before {
+            content: '';
+            background-image: url(./pics/Check_circle_V_green.png);
+        }
+        
+        form .form .details label:last-child {
+            border-right: 2px solid #ccc;
+        }
+        
+        form .form .details label:hover {
+            color: rgb(20, 160, 80);
+            background-color: rgb(252, 255, 252);
+            border-top: 1.5px solid #ccc;
+            border-bottom: 2.5px solid rgb(20, 160, 80);
+        }
+        
+        form .form .table {
+            padding: 25px;
+        }
+        
+        form .form .table h4 {
+            font-size: 20px;
+            padding: 20px 0;
+            text-transform: capitalize;
+        }
+        
+        @media screen and (min-width:500px) {
+            form .form .table .main {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+        
+        form .form .table .main {
+            user-select: none;
+        }
+        
+        form .form .table .main input {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        @media screen and (min-width:500px) {
+            form .form .table .main .left,
+            form .form .table .main .center,
+            form .form .table .main .right {
+                width: 30%;
+            }
+        }
+        
+        form .form .table .main .left p {
+            padding: 5.65px 0;
+            user-select: none;
+        }
+        
+        form .form .table .main .left .cn:after {
+            content: '';
+            background-image: url(./pics/calendar.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0 10px;
+            position: relative;
+            top: 35px;
+            left: calc(100% - 142px);
+        }
+        
+        form .form .table .main .center select {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8.8px 10px;
+            margin: 0;
+            border: 1px solid #ccc;
+            outline: none;
+            appearance: none;
+        }
+        
+        form .form .table .main .center p {
+            margin: 5.5px 0;
+        }
+        
+        form .form .table .main .center .at {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        form .form .table .main .center .ats {
+            border: 1px solid #ccc;
+            padding: 8.4px 10px;
+            border-radius: 3px;
+        }
+        
+        form .form .table .main .center .at:after {
+            content: '';
+            background-image: url(./pics/triangle_Arrow_down.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding: 0 10px;
+            position: relative;
+            top: 35px;
+            left: calc(100% - 123px);
+        }
+        
+        form .form .table .main .center .place {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        form .form .table .main .center .place .city {
+            width: 48%;
+        }
+        
+        form .form .table .main .center .place .state {
+            width: 48%;
+        }
+        
+        form .form .table .main .center .os .butt {
+            background-color: #e4eeee;
+            border: 1px solid rgb(228, 238, 238);
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            padding: 9px;
+        }
+        
+        form .form .table .main .center .os .butt label {
+            width: 50%;
+        }
+        
+        form .form .table .main .center .os input {
+            display: none;
+            width: 13px;
+        }
+        
+        form .form .table .main .center .os input:checked+ :before {
+            background-image: url(./pics/Check_circle_green.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            content: '';
+        }
+        
+        form .form .table .main .center .os span:before {
+            content: '';
+            padding: 0 10px;
+            margin: 0 5px;
+            background-image: url(./pics/Check_circle_gray.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        form .form .table .main .right p {
+            margin: 5.5px 0;
+        }
+        
+        form .form .table .main .right .logo {
+            border: 1px solid #e4eeee;
+            background-color: #e4eeee;
+            border-radius: 3px;
+            padding: 4.87px;
+        }
+        
+        form .form .table .main .right .log {
+            border: 0;
+            padding: 3px 10px;
+        }
+        
+        form .order {
+            padding: 30px 0;
+            font-size: 12px;
+            color: #ccc;
+        }
+        
+        form .form .table .buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        form .form .table .buttons input {
+            display: none;
+        }
+        
+        @media screen and (min-width:500px) {
+            form .form .table .buttons label {
+                padding: 10px 40px;
+                margin-top: 60px;
+            }
+        }
+        
+        form .form .table .buttons label {
+            padding: 10px 20px;
+            color: white;
+            user-select: none;
+            background-color: #c9c9c9;
+            margin-left: 10px;
+            border: 1px solid #c9c9c9;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        
+        form .form .table .buttons label span {
+            text-transform: uppercase;
+        }
+        
+        form .form .table .buttons label.cont {
+            background-color: rgb(20, 160, 80);
+            border: 1px solid rgb(20, 160, 80);
+        }
+        
+        form .form .table .buttons label .continue:after {
+            padding: 0 10px;
+            margin-left: 5px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-image: url(./pics/Arrow_Right.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        form .form .table .buttons label:active {
+            opacity: 0.8;
+        }
+        
+        footer {
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+        
+        @media screen and (min-width:500px) {
+            footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        @media screen and (min-width:1020px) {
+            footer {
+                padding: 20px 50px 20px 100px;
+            }
+        }
+        
+        @media screen and (max-width:1020px) {
+            footer h2 {
+                margin-left: 25px;
+                width: 50%;
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            footer h2 {
+                margin-left: 35px;
+                width: 90%;
+            }
+        }
+        
+        footer .get {
+            font-weight: lighter;
+            color: gray;
+        }
+        
+        footer .buttons {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        
+        @media screen and (max-width:500px) {
+            footer .buttons {
+                margin-left: 35px;
+            }
+        }
+        
+        footer .buttons input {
+            display: none;
+        }
+        
+        footer .buttons .dn {
+            cursor: pointer;
+            background-color: rgb(95, 175, 250);
+            border: 5px solid rgb(95, 175, 250);
+            border-radius: 3px;
+            padding: 7px 15px;
+            margin-right: 10px;
+            user-select: none;
+            color: white;
+        }
+        
+        footer .buttons .dn:active {
+            border: 1px solid rgb(75, 100, 200);
+            padding: 11px 19px;
+        }
+        
+        footer .buttons .vf {
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 11px 24px;
+            margin: 0 15px;
+            user-select: none;
+            color: white;
+        }
+        
+        footer .buttons .vf:active {
+            border: 1px solid gray;
+            padding: 11px 24px;
+        }
