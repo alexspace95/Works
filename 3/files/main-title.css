@@ -1,0 +1,139 @@
+@media screen and (min-width:500px) {
+    .title {
+        background-image: url(./images/0.common/photo-1.jpg);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-position-y: -100px;
+    }
+    .title .ave {
+        margin: 0;
+        padding: 0;
+        font-size: 450px;
+        padding-top: 30px;
+        position: relative;
+        bottom: 23px;
+    }
+    @media screen and (max-width:1200px) {
+        .title {
+            background-image: url(./images/0.common/photo-1.jpg);
+            width: 100%;
+            height: 450px;
+        }
+        .title .ave {
+            position: relative;
+            top: 160px;
+            font-size: 265px;
+            z-index: 2;
+        }
+    }
+    .title .dark {
+        background-image: url(./images/0.common/darken.jpg);
+        background-position: center;
+        background-size: 100%;
+        padding: 215px 50%;
+        position: relative;
+        bottom: 363px;
+    }
+    @media screen and (max-width:1200px) {
+        .title .dark {
+            padding: 216px 50%;
+            position: relative;
+            bottom: 138px;
+        }
+    }
+    .title h2 {
+        margin-top: -390px;
+    }
+    @media screen and (max-width:1200px) {
+        .title h2 {
+            margin-top: -250px;
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .title .dark {
+        padding: 28% 50%;
+        position: relative;
+        bottom: 83px;
+    }
+    .title .ave {
+        position: relative;
+        top: 200px;
+        font-size: 220px;
+        z-index: 2;
+    }
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    user-select: none;
+}
+
+.title .ave {
+    margin: 0;
+    padding: 0;
+    color: #45474c;
+    padding-top: 30px;
+    opacity: 0.22;
+}
+
+.title .dark {
+    background-image: url(./images/0.common/darken.jpg);
+    background-position: center;
+    opacity: 0.65;
+    z-index: 1;
+}
+
+.title h2 {
+    padding-bottom: 55px;
+    font-size: 48px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.title h2 span {
+    font-weight: normal;
+}
+
+.title h3 {
+    font-size: 30px;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    .title {
+        background-image: url(./images/0.common/photo-1mob.jpg);
+        background-size: 100%;
+        height: 830px;
+    }
+    .title .dark {
+        position: relative;
+        top: 230px;
+        padding: 405px 50%;
+    }
+    .title .ave {
+        position: relative;
+        top: 680px;
+        font-size: 120px;
+        z-index: 2;
+        opacity: 0.5;
+    }
+    .title h2 {
+        padding-top: 200px;
+        font-size: 42px;
+    }
+    .title h3 {
+        font-size: 24px;
+    }
+}

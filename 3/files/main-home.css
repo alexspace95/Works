@@ -1,0 +1,552 @@
+main {
+    background-image: url(./images/1.home/photo0.png);
+    background-position-x: 50%;
+    background-size: 190%;
+    background-color: #f8f8f8;
+    height: 920px;
+}
+
+main .b-collection {
+    color: #737373;
+    text-align: center;
+}
+
+main .b-collection .button {
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid #737373;
+}
+
+main .b-collection .button span {
+    text-transform: uppercase;
+}
+
+main .b-collection .button input {
+    display: none;
+}
+
+@media screen and (min-width:500px) {
+    main {
+        background-size: 965px;
+        background-position-x: 10%;
+    }
+    main .b-collection {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 740px;
+        right: 15%;
+    }
+    main .b-collection .button {
+        padding: 10px 75px;
+    }
+}
+
+main .b-collection .button:hover {
+    color: #ffffff;
+    background-color: #00c8c8;
+    border: 2px solid #00c8c8;
+}
+
+main .b-collection .button:active {
+    opacity: 0.75;
+    color: #ffffff;
+    background-color: #00c8c8;
+    border: 2px solid white;
+}
+
+main .title .ave {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 30px;
+    color: #575153;
+}
+
+@media screen and (min-width:1200px) {
+    main .title .ave {
+        font-size: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main .title .ave {
+        font-size: 280px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main .title .ave {
+        font-size: 200px;
+    }
+}
+
+aside {
+    margin: 50px;
+    border-top: 1px solid #737373;
+    border-bottom: 1px solid #737373;
+}
+
+aside nav div {
+    display: flex;
+    justify-content: start;
+    padding-top: 50px;
+}
+
+aside nav a {
+    color: #737373;
+    text-transform: uppercase;
+    padding: 0 20px 20px 0;
+    font-size: 13px;
+}
+
+aside nav a:hover {
+    color: #00c8c8;
+}
+
+aside .mod {
+    user-select: none;
+    color: #737373;
+    padding: 30px 1px;
+    background-color: #ffffff;
+}
+
+@media screen and (min-width:800px) {
+    aside .mod {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+aside .mod .one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    border: 1px solid white;
+    padding: 5px 0px;
+}
+
+aside .mod .one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover {
+    box-shadow: 0px 0px 10px #737373;
+    border: 1px solid #737373;
+}
+
+aside .mod figcaption {
+    opacity: 0;
+    border: 1px solid #737373;
+    margin: 0px -1px;
+    background-color: white;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .three figcaption,
+    aside .mod .four figcaption {
+        top: 675px;
+    }
+}
+
+aside .mod figure span {
+    padding: 10px;
+}
+
+aside .mod .old {
+    text-decoration: line-through;
+}
+
+aside .mod .one:hover figcaption,
+.two:hover figcaption,
+.three:hover figcaption,
+.four:hover figcaption,
+.five:hover figcaption,
+.six:hover figcaption {
+    opacity: 1;
+    text-align: center;
+    box-shadow: 0px 5px 10px #737373;
+    border-top: 0;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .one:hover figcaption,
+    .two:hover figcaption,
+    .three:hover figcaption,
+    .four:hover figcaption,
+    .five:hover figcaption,
+    .six:hover figcaption {
+        position: relative;
+        top: 475px;
+        z-index: 1;
+    }
+}
+
+aside .mod figcaption h5 {
+    font-weight: normal;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+aside .mod figcaption .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+aside .mod figcaption .boxes input {
+    display: none;
+}
+
+aside .mod figcaption .boxes .boxes-one,
+aside .mod figcaption .boxes .box-like,
+aside .mod figcaption .boxes .box-sizes {
+    padding: 1px 11px;
+    border-radius: 50px;
+    border: 3px solid #727272;
+    background-color: #727272;
+    margin: 0px 5px;
+}
+
+aside .mod figcaption .boxes .boxes-one {
+    background-image: url(./images/1.home/cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+aside .mod figcaption .boxes .boxes-one:hover,
+aside .mod figcaption .boxes .box-like:hover,
+aside .mod figcaption .boxes .box-sizes:hover {
+    border: 3px solid #00c8c8;
+    background-color: #00c8c8;
+}
+
+aside .mod figcaption .boxes .box-like {
+    background-image: url(./images/1.home/like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+aside .mod figcaption .boxes .box-sizes {
+    background-image: url(./images/1.home/arrows1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+@media screen and (min-width:800px) {
+    aside .mod .lefts,
+    aside .mod .rights {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .lefts .left-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .lefts .left-top .one,
+    .two {
+        width: 48%;
+    }
+}
+
+aside .mod .lefts .left-top .one,
+.two {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .rights .right-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    aside .mod .rights .right-bottom .five,
+    .six {
+        width: 48%;
+    }
+}
+
+aside .mod .one,
+aside .mod .two,
+aside .mod .three,
+aside .mod .four,
+aside .mod .five,
+aside .mod .six {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+aside .mod .one {
+    background-image: url(./images/1.home/photoa1.png);
+    height: 500px;
+}
+
+aside .mod .two {
+    background-image: url(./images/1.home/photoa2.png);
+    height: 500px;
+}
+
+aside .mod .three {
+    background-image: url(./images/1.home/photoa3.png);
+    height: 700px;
+    margin: 20px 0;
+}
+
+aside .mod .four {
+    background-image: url(./images/1.home/photoa4.png);
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+aside .mod .five {
+    background-image: url(./images/1.home/photoa5.png);
+    height: 500px;
+}
+
+aside .mod .six {
+    background-image: url(./images/1.home/photoa6.png);
+    height: 500px;
+}
+
+.lookbooks {
+    margin: 50px 0;
+}
+
+@media screen and (min-width:500px) {
+    .lookbooks .looks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.lookbooks .looks .div {
+    width: 31%;
+    background-color: #f8f8f8;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: end;
+}
+
+.lookbooks .looks .pic-man,
+.lookbooks .looks .pic-woman,
+.lookbooks .looks .pic-you {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+@media screen and (min-width:500px) {
+    .lookbooks .looks .pic-man,
+    .lookbooks .looks .pic-woman,
+    .lookbooks .looks .pic-you {
+        margin-left: 5%;
+    }
+}
+
+.lookbooks .looks .pic-man {
+    background-image: url(./images/1.home/lmen.png);
+}
+
+.lookbooks .looks .pic-woman {
+    background-image: url(./images/1.home/lwomen.png);
+}
+
+.lookbooks .looks .pic-you {
+    background-image: url(./images/1.home/lyour.png);
+}
+
+.lookbooks .looks .text {
+    width: 55%;
+    margin: 20px;
+}
+
+.lookbooks .looks h2 {
+    text-transform: uppercase;
+}
+
+.lookbooks .looks h2 p {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.lookbooks .view-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.lookbooks .view-button label {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.lookbooks .view-button label input {
+    display: none;
+}
+
+.lookbooks .view-button label span {
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    user-select: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.lookbooks .view-button label span:hover {
+    background-color: #00c8c8;
+    border: 1px solid #00c8c8;
+    color: white;
+}
+
+.lookbooks .view-button label span:active {
+    background-color: #00c8c8;
+    border: 1px solid white;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    main nav input {
+        margin: 10px;
+    }
+    aside .mod .lefts .left-top .one {
+        margin-bottom: 20px;
+    }
+    aside .mod .rights .four {
+        margin-bottom: 20px;
+    }
+    aside .mod .rights .right-bottom .five {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    aside .mod .one,
+    aside .mod .two,
+    aside .mod .three,
+    aside .mod .four,
+    aside .mod .five,
+    aside .mod .six {
+        background-position: top;
+        background-size: 100%;
+    }
+    aside .mod figcaption {
+        position: relative;
+        top: 320px;
+    }
+}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    main {
+        height: 765px;
+    }
+    main nav ul ol .pic {
+        position: relative;
+    }
+    main .b-collection {
+        position: relative;
+        top: 50%;
+    }
+    main .b-collection .button {
+        padding: 10px 10%;
+    }
+    main .title .ave {
+        font-size: 120px;
+    }
+    aside {
+        margin: 30px 10px;
+        border-top: 1px solid #737373;
+        border-bottom: 1px solid #737373;
+    }
+    aside nav div {
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+    }
+    aside nav p {
+        color: #737373;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+    aside nav a {
+        padding: 0;
+    }
+    aside nav a:hover {
+        color: #00c8c8;
+    }
+    aside .mod .lefts .left-top .one {
+        margin-bottom: 20px;
+    }
+    aside .mod .rights .four {
+        margin-bottom: 20px;
+    }
+    aside .mod .rights .right-bottom .five {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    aside .mod .one,
+    aside .mod .two,
+    aside .mod .three,
+    aside .mod .four,
+    aside .mod .five,
+    aside .mod .six {
+        background-position: top;
+        height: 450px;
+        padding: 0;
+        background-size: 100%;
+    }
+    aside .mod figcaption {
+        opacity: 0;
+        position: relative;
+        top: 365px;
+        border: 1px solid #737373;
+        margin: 0px -1px;
+        background-color: #ffffff;
+    }
+    .lookbooks .looks {
+        display: block;
+        width: 100%;
+    }
+    .lookbooks .looks .div {
+        height: 400px;
+    }
+    .lookbooks .looks .text {
+        width: 70%;
+        padding-right: 0;
+        text-align: end;
+    }
+    .lookbooks .looks .div {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 10px;
+        text-align: end;
+    }
+}

@@ -1,0 +1,596 @@
+aside {
+    margin: 60px 0px;
+    padding: 50px 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+aside .a-nav {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width:500px) {
+    aside .a-nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    aside .a-nav a {
+        margin-right: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    aside {
+        padding: 55px 110px;
+    }
+}
+
+aside .a-nav a {
+    color: #727272;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+aside .mod {
+    display: block;
+}
+
+aside .mod .top,
+aside .mod .center,
+aside .mod .bottom {
+    height: 960px;
+}
+
+@media screen and (min-width:1050px) {
+    aside .mod .top,
+    aside .mod .center,
+    aside .mod .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        height: 450px;
+    }
+    aside .mod .bottom {
+        padding-bottom: 0px;
+    }
+    aside .mod .top .top-left {
+        display: flex;
+        justify-content: space-between;
+    }
+    aside .mod .top .top-left,
+    aside .mod .top .top-right {
+        width: 49%;
+    }
+    aside .mod .top .one,
+    aside .mod .top .two {
+        width: 48%;
+    }
+}
+
+aside .mod .top .one,
+aside .mod .top .two,
+aside .mod .top .three {
+    margin-bottom: 30px;
+}
+
+aside .mod .pics {
+    cursor: pointer;
+    height: 450px;
+    background-color: #f8f8f8;
+    border: 1px solid white;
+}
+
+aside .mod .pics:hover {
+    box-shadow: 0px 0px 10px gray;
+    border: 1px solid gray;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .top .top-left {
+        display: flex;
+        justify-content: space-between;
+    }
+    aside .mod .top .one,
+    aside .mod .top .two {
+        width: 48%;
+    }
+}
+
+aside .mod .pics span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+aside .mod .pics p {
+    color: #727272;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+aside .mod .pics h4 {
+    color: #727272;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:1050px) {
+    aside .mod .center {
+        margin-bottom: 30px;
+    }
+    aside .mod .center-left,
+    aside .mod .center-right {
+        display: flex;
+        justify-content: space-between;
+        width: 49%;
+    }
+    aside .mod .center .pics {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .center .pics {
+        margin-bottom: 30px;
+        width: 48%;
+    }
+    aside .mod .center-left,
+    aside .mod .center-right {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    aside .mod .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    aside .mod .bottom-left {
+        width: 74.5%;
+    }
+    aside .mod .bottom-right {
+        width: 23.5%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    @media screen and (max-width: 1050px) {
+        aside .mod .bottom-left {
+            width: 100%;
+        }
+        aside .mod .bottom-right {
+            width: 50%;
+            margin: 30px 25% 0 25%;
+        }
+    }
+}
+
+aside .mod .top .one {
+    background-image: url(./images/4.lookbook/one.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .top .two {
+    background-image: url(./images/4.lookbook/two.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .top .three {
+    background-image: url(./images/4.lookbook/three.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    padding: 0 5px;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .top .three {
+        padding: 15px;
+    }
+}
+
+aside .mod .top .three .text {
+    text-align: start;
+    color: #575153;
+}
+
+aside .mod .top .three .text h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+aside .mod .text h2 .bold {
+    font-weight: lighter;
+}
+
+aside .mod .top .three .text h5 {
+    font-weight: 13px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+aside .mod .top .three .text p {
+    font-weight: 15px;
+    width: 50%;
+    padding-top: 25px;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .view-button {
+        width: 120px;
+    }
+}
+
+aside .mod .view-button label input {
+    display: none;
+}
+
+aside .mod .view-button label p {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+aside .mod .view-button label p:hover {
+    background-color: #00c8c8;
+    border: 1px solid #00c8c8;
+    color: white;
+}
+
+aside .mod .view-button label p:active {
+    background-color: #00c8c8;
+    border: 1px solid #e7e8ea;
+    color: white;
+}
+
+aside .mod .center .four {
+    background-image: url(./images/4.lookbook/four.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .center .five {
+    background-image: url(./images/4.lookbook/five.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .center .six {
+    background-image: url(./images/4.lookbook/six.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .center .seven {
+    background-image: url(./images/4.lookbook/seven.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .bottom .eight {
+    background-image: url(./images/4.lookbook/eight8.jpg);
+    background-origin: #efefed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .bottom .eight .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+aside .mod .bottom .eight .flex {
+    padding: 15px;
+    text-align: start;
+    color: #575153;
+}
+
+aside .mod h2 .bold {
+    font-weight: lighter;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .bottom .eight .flex .e-l {
+        width: 40%;
+    }
+}
+
+aside .mod .bottom .eight .e-l h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+aside .mod .bottom .eight .e-l h5 {
+    padding-top: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+aside .mod .bottom .eight .e-l .p {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width:1000px) {
+    aside .mod .bottom .eight .e-l h2 {
+        font-size: 24px;
+    }
+    aside .mod .bottom .eight .e-l h5 {
+        padding-top: 10px;
+    }
+    aside .mod .bottom .eight .e-l .p {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .bottom .eight .e-r {
+        width: 45%;
+        text-align: end;
+    }
+}
+
+aside .mod .bottom .eight .e-r {
+    color: #00c8c8;
+    text-transform: uppercase;
+}
+
+aside .mod .bottom .eight .e-r h3 {
+    padding-top: 30%;
+    font-size: 140px;
+    padding-bottom: 30px;
+}
+
+aside .mod .bottom .eight .e-r h3 p {
+    font-size: 48px;
+}
+
+@media screen and (max-width:1000px) {
+    aside .mod .bottom .eight .e-r h3 {
+        font-size: 100px;
+    }
+    aside .mod .bottom .eight .e-r h3 p {
+        font-size: 36px;
+    }
+}
+
+aside .mod .bottom .nine {
+    background-image: url(./images/4.lookbook/nine.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+aside .mod .pics .hover {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+}
+
+aside .mod .pics:hover .hover {
+    opacity: 1;
+}
+
+aside .mod .pics .hover .h-info {
+    background-image: url(./images/4.lookbook/h-info.png);
+    background-position: center;
+    margin-right: 25px;
+    background-position-y: -16px;
+    background-position-x: -18px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+aside .mod .pics .hover .h-like {
+    background-image: url(./images/4.lookbook/h-like.png);
+    background-position-y: -12px;
+    background-position-x: -15px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.lookbooks {
+    margin: 50px 0;
+}
+
+@media screen and (min-width:500px) {
+    .lookbooks .looks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.lookbooks .looks .div {
+    width: 31%;
+    background-color: #f8f8f8;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: end;
+}
+
+.lookbooks .looks .pic-man,
+.lookbooks .looks .pic-woman,
+.lookbooks .looks .pic-you {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+@media screen and (min-width:500px) {
+    .lookbooks .looks .pic-man,
+    .lookbooks .looks .pic-woman,
+    .lookbooks .looks .pic-you {
+        margin-left: 5%;
+    }
+}
+
+.lookbooks .looks .pic-man {
+    background-image: url(./images/1.home/lmen.png);
+}
+
+.lookbooks .looks .pic-woman {
+    background-image: url(./images/1.home/lwomen.png);
+}
+
+.lookbooks .looks .pic-you {
+    background-image: url(./images/1.home/lyour.png);
+}
+
+.lookbooks .looks .text {
+    width: 55%;
+    margin: 20px;
+}
+
+.lookbooks .looks h2 {
+    text-transform: uppercase;
+}
+
+.lookbooks .looks h2 p {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.lookbooks .view-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.lookbooks .view-button label {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.lookbooks .view-button label input {
+    display: none;
+}
+
+.lookbooks .view-button label span {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    user-select: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.lookbooks .view-button label span:hover {
+    background-color: #00c8c8;
+    border: 1px solid #00c8c8;
+    color: white;
+}
+
+.lookbooks .view-button label span:active {
+    background-color: #00c8c8;
+    border: 1px solid white;
+    color: white;
+}
+
+@media screen and (max-width:800px) {}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    aside .mod .top {
+        height: 1440px;
+    }
+    aside .mod .center {
+        height: 1920px;
+    }
+    aside .mod .bottom {
+        height: 1150px;
+    }
+    aside .mod .center .pics {
+        margin-bottom: 30px;
+    }
+    aside .mod .top .three {
+        background-image: url(./images/4.lookbook/three-m.jpg);
+        background-repeat: no-repeat;
+        height: 450px;
+    }
+    aside .mod .top .three .text {
+        padding: 0 10%;
+    }
+    aside .mod .top .three .text h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    aside .mod .top .three .text h5 {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    aside .mod .top .three .text p {
+        padding-top: 15px;
+    }
+    aside .mod .view-button {
+        width: 80%;
+        margin: 0 10%;
+    }
+    aside .mod .bottom .eight {
+        margin-bottom: 30px;
+        background-position: top;
+        padding: 30px 0;
+        height: 660px;
+        background-image: url(./images/4.lookbook/eight.jpg);
+    }
+    aside .mod .bottom .eight .e-l .p {
+        width: 80%;
+        padding-top: 10px;
+    }
+    aside .mod .bottom .eight .e-l .view-button {
+        padding-top: 20px;
+    }
+    aside .mod .bottom .eight .e-r h3 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .lookbooks .looks {
+        display: block;
+        width: 100%;
+    }
+    .lookbooks .looks .div {
+        height: 400px;
+    }
+    .lookbooks .looks .text {
+        width: 70%;
+        padding-right: 0;
+        text-align: end;
+    }
+    .lookbooks .looks .div {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 10px;
+        text-align: end;
+    }
+}

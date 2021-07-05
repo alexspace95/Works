@@ -1,0 +1,271 @@
+aside {
+    padding: 60px 0;
+    background-color: #ffffff;
+    color: #737373;
+}
+
+@media screen and (min-width:900px) {
+    aside .cities {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    aside .cities .london,
+    .new-york,
+    .paris {
+        width: 23%;
+    }
+}
+
+aside .cities .london,
+.new-york,
+.paris {
+    margin: 0 30px;
+}
+
+aside .cities h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+aside .cities .address {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+aside .cities p {
+    padding-top: 20px;
+}
+
+aside .cities .view-button {
+    margin-top: 30px;
+    width: 50%;
+}
+
+aside .cities .view-button {
+    width: 80%;
+}
+
+aside .cities .view-button label {
+    padding: 0;
+}
+
+aside .cities .view-button label input {
+    display: none;
+}
+
+aside .cities .view-button label span {
+    background-color: #f8f8f8;
+    border: 2px solid #737373;
+    text-align: center;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+aside .cities .view-button label span:hover {
+    background-color: #00c8c8;
+    border: 2px solid #00c8c8;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+aside .cities .view-button label span:active {
+    background-color: #00c8c8;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}
+
+.maps {
+    background-color: #f8f8f8;
+    margin-bottom: 75px;
+    color: #737373;
+}
+
+@media screen and (min-width:1000px) {
+    .maps {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 125px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .maps .map {
+        width: 60%;
+    }
+}
+
+.maps .map {
+    background-image: url(./images/3.local/map.jpg);
+    background-color: beige;
+    height: 530px;
+    cursor: pointer;
+}
+
+.maps .map .loc {
+    background-image: url(./images/3.local/loc2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+
+@media screen and (min-width:1000px) {
+    .maps .address {
+        width: 40%;
+    }
+}
+
+.maps .address {
+    background-color: #f8f8f8;
+}
+
+@media screen and (max-width:1000px) {
+    .maps .address {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .maps .address {
+        height: 530px;
+    }
+}
+
+.maps .address .all {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:1000px) {
+    .maps .address .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.maps .address .all h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #575153;
+}
+
+.maps .address .all p {
+    color: #737373;
+    font-size: 15px;
+}
+
+.maps .address .all p.ad {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.maps .address .all .div {
+    padding: 30px 0 20px 0;
+}
+
+@media screen and (max-width:1000px) {
+    .maps .address .text {
+        width: 45%;
+    }
+    .maps .address .div {
+        width: 45%;
+    }
+}
+
+.maps .address .all .div p {
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.maps .address .all .div p:before {
+    content: '';
+    background-color: transparent;
+    padding: 0px 10px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.maps .address .all .div .one:before {
+    background-image: url(./images/3.local/m1.jpg);
+}
+
+.maps .address .all .div .two:before {
+    background-image: url(./images/3.local/m2.jpg);
+}
+
+.maps .address .all .div .three:before {
+    background-image: url(./images/3.local/m3.jpg);
+}
+
+.maps .address .all .div .four:before {
+    background-image: url(./images/3.local/m4.jpg);
+}
+
+.maps .address .all .div .five:before {
+    background-image: url(./images/3.local/m5.jpg);
+}
+
+.maps .address .all .labels .flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.maps .address .all .labels div {
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.maps .address .all .labels .f {
+    background-image: url(./images/3.local/mf.jpg);
+}
+
+.maps .address .all .labels .t {
+    background-image: url(./images/3.local/mt.jpg);
+}
+
+.maps .address .all .labels .i {
+    background-image: url(./images/3.local/mi.jpg);
+}
+
+.maps .address .all .labels .p {
+    background-image: url(./images/3.local/mp.jpg);
+    margin-right: 0px;
+}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    aside .cities .london,
+    aside .cities .new-york {
+        padding-bottom: 50px;
+    }
+    section.maps .address .all {
+        display: block;
+    }
+    section.maps .address .text {
+        width: 100%;
+    }
+    section.maps .address .div {
+        width: 100%;
+    }
+    section.maps .address .all .labels div {
+        height: 30px;
+        width: 195px;
+        background-position: center;
+    }
+}

@@ -1,0 +1,177 @@
+.form {
+    padding: 60px 15% 90px 15%;
+}
+
+.form .blue {
+    color: #00c8c8;
+}
+
+@media screen and (min-width:1050px) {
+    .form .form-flex {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .form .form-flex form {
+        width: 50%;
+    }
+    .form .form-flex .sign-in {
+        padding-right: 30px;
+    }
+    .form .form-flex .reg {
+        padding-left: 30px;
+    }
+}
+
+.form .form-flex h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #575153;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:1050px) {
+    .form .form-flex .sign-in {
+        border-bottom: 1px solid #eeeeee;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    .form .form-flex .reg {
+        border-left: 1px solid #eeeeee;
+    }
+}
+
+.form .form-flex .email,
+.form .form-flex .pass {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #eeeeee;
+    color: #a0a0a0;
+    outline: none;
+}
+
+.form .form-flex .email:focus,
+.form .form-flex .pass:focus {
+    border: 2px solid #bb5465;
+    background-color: #fcf6f7;
+}
+
+.form .form-flex label {
+    margin: 0;
+    padding: 0;
+}
+
+.form .form-flex .sign-in .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.form .form-flex .sign-in .bottom .sub {
+    display: none;
+}
+
+.form .form-flex .sign-in .bottom .p-button {
+    padding: 20px 35px;
+    border: 2px solid #737373;
+    color: #737373;
+    text-transform: uppercase;
+}
+
+.form .form-flex .sign-in .bottom .p-button:hover {
+    background-color: #00c8c8;
+    color: white;
+    border: 2px solid #00c8c8;
+}
+
+.form .form-flex .sign-in .bottom .p-button:active {
+    border: 2px solid white;
+}
+
+.form .form-flex .sign-in .bottom .blue {
+    padding-top: 15px;
+}
+
+@media screen and (max-width:1050px) {
+    .form .form-flex .sign-in .bottom {
+        padding-bottom: 30px;
+    }
+}
+
+.form .form-flex .reg .chb {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form .form-flex .reg .chb input {
+    display: none;
+}
+
+.form .form-flex .reg .chb .span-checkbox {
+    border: 1px solid #737373;
+    padding: 0.4px 10px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.form .form-flex .reg label input:checked+span {
+    background-image: url(./images/6.sign/check.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    background-color: #00c8c8;
+}
+
+.form .form-flex .reg .ch-text {
+    font-size: 15px;
+    color: #737373;
+}
+
+.form .form-flex .reg .buttons-reg {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding-top: 20px;
+}
+
+.form .form-flex .reg .buttons-reg input {
+    display: none;
+}
+
+.form .form-flex .reg .buttons-reg .create {
+    padding: 20px 20px;
+    border: 2px solid #737373;
+    color: #737373;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.form .form-flex .reg .buttons-reg .create:hover {
+    background-color: #00c8c8;
+    color: white;
+    border: 2px solid #00c8c8;
+}
+
+.form .form-flex .reg .buttons-reg .create:active {
+    border: 2px solid white;
+}
+
+.form .form-flex .reg .buttons-reg .pr {
+    width: 40%;
+    margin-top: -5%;
+}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    .form {
+        padding: 60px 10px 120px 10px;
+    }
+    .form .form-flex .reg h4 {
+        padding-top: 20px;
+    }
+}

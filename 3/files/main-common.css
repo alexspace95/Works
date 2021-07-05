@@ -1,0 +1,445 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Montserrat;
+    }
+    
+    @font-face {
+        font-family: Montserrat;
+        src: url(./font/Montserrat-Medium.otf);
+    }
+    
+    header .account {
+        background-color: #333333;
+        color: #6d6d6d;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    header .account .currency {
+        color: #6c6c6c;
+    }
+    
+    header .account .currency select {
+        outline: none;
+        background-color: #333333;
+        border: none;
+        color: #6d6d6d;
+    }
+    
+    header .account .login {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    header .account .login a,
+    label {
+        padding: 13.5px 17.5px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #6d6d6d;
+    }
+    
+    @media screen and (min-width:500px) {
+        header .account .login .cart {
+            margin-left: 60px;
+        }
+    }
+    
+    header .account .login label {
+        background-color: #00c8c8;
+        color: #ffffff;
+        margin-left: 2.5px;
+    }
+    
+    header .account .login label :before {
+        content: '';
+        padding: 10px;
+        margin-right: 20px;
+        background-position: center;
+        background-image: url(./images/0.common/cart1.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 100%;
+    }
+    
+    header .account .login label :after {
+        content: '⌄';
+        margin-left: 5px;
+        position: relative;
+        bottom: 5px;
+    }
+    
+    main {
+        width: 100%;
+        background-color: #ffffff;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 110px;
+        color: #222222;
+    }
+    
+    main .blue {
+        color: rgb(0, 200, 200);
+    }
+    
+    main .head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    main .head p {
+        text-transform: uppercase;
+        margin: 10px 0 0 30px;
+    }
+    
+    main .head .label {
+        color: #222222;
+    }
+    
+    @media screen and (min-width:500px) {
+        main .head .label {
+            width: 450px;
+            color: #222222;
+            font-size: 24px;
+        }
+    }
+    
+    main .head span {
+        font-weight: bold;
+    }
+    
+    main .head nav {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+    
+    main nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    
+    main .h {
+        text-transform: uppercase;
+    }
+    
+    main nav ul li {
+        display: block;
+        position: relative;
+        right: 0;
+        z-index: 3;
+    }
+    
+    main nav ul li a {
+        display: block;
+        padding: 20px 5px;
+        color: #3c3c3c;
+    }
+    
+    main nav ul li section a {
+        color: #9c9c9c;
+    }
+    
+    main nav ul li section .os {
+        color: #575153;
+    }
+    
+    main nav ul li a:hover {
+        color: #00c8c8;
+    }
+    
+    main nav input {
+        margin: 10px 100px 10px 100px;
+        outline: none;
+        background-color: transparent;
+        padding: 6.5px 10px;
+        font-size: 13px;
+        border: 1px solid #e7e7e7;
+        color: #989898;
+        background-image: url(./images/0.common/search.png);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+    
+    @media screen and (max-width:1000px) {
+        main nav input {
+            margin: 10px;
+        }
+    }
+    
+    main nav ul ol {
+        background-color: white;
+        display: none;
+        position: absolute;
+        text-transform: capitalize;
+        padding: 0;
+    }
+    
+    main nav ul ol section {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    
+    main nav ul ol section div {
+        margin: 20px;
+        padding-right: 40px;
+    }
+    
+    main nav ul ol section div a {
+        padding: 5px;
+    }
+    
+    main nav ul ol .pic {
+        background-color: #333333;
+        margin: 10px;
+        padding: 30px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    
+    main nav ul ol li {
+        white-space: nowrap;
+    }
+    
+    main nav ul li:hover ol {
+        display: block;
+    }
+    
+    main nav ul ol li div {
+        padding: 0;
+        margin: 0;
+    }
+    
+    main nav ul ol li .os {
+        text-transform: uppercase;
+        padding: 20px 5px;
+        font-weight: bold;
+    }
+    
+    main.head {
+        padding: 50px;
+    }
+    
+    footer {
+        padding: 30px 10px;
+        background-color: #f8f8f8;
+        user-select: none;
+    }
+    
+    @media screen and (min-width:500px) {
+        footer {
+            padding: 30px 12%;
+        }
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        footer .top div {
+            text-align: start;
+            width: 22%;
+        }
+    }
+    
+    footer .top div h6 {
+        text-transform: uppercase;
+        padding: 35px 0;
+    }
+    
+    footer .top a {
+        text-transform: none;
+        color: #7d7d7d;
+        display: block;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    footer .top a:hover {
+        opacity: 0.8;
+    }
+    
+    footer .top .contact p {
+        padding-bottom: 8px;
+        color: #7d7d7d;
+    }
+    
+    footer .top .blue {
+        color: #00c8c8;
+    }
+    
+    @media screen and (min-width:500px) {
+        footer .bottom {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        footer .bottom .left {
+            width: 49%;
+        }
+        footer .bottom .right {
+            width: 49%;
+        }
+    }
+    
+    @media screen and (max-width:1000px) {
+        footer {
+            padding: 30px 5%;
+        }
+    }
+    
+    footer .bottom {
+        margin-top: 20px;
+    }
+    
+    footer .bottom .left .field {
+        background-color: rgb(99, 96, 96);
+        text-align: center;
+        padding: 25px;
+    }
+    
+    footer .bottom .left .field {
+        height: 200px;
+        padding: 10% 0;
+        text-align: center;
+    }
+    
+    footer .bottom .left .field input {
+        display: none;
+    }
+    
+    footer .bottom .left .field h2 {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 36px;
+        padding: 2px;
+    }
+    
+    footer .bottom .left .field .light {
+        font-weight: normal;
+    }
+    
+    footer .bottom .right {
+        background-color: #00c8c8;
+        margin-top: 18px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .bottom .right .f a {
+        background-image: url(./images/0.common/Facebook.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 16px;
+    }
+    
+    footer .bottom .right .t a {
+        background-image: url(./images/0.common/Twitter.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+        padding: 16px;
+    }
+    
+    footer .bottom .right .i a {
+        background-image: url(./images/0.common/insta.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 120%;
+        padding: 12px 16px;
+    }
+    
+    footer .bottom .right .p a {
+        background-image: url(./images/0.common/Pinterest.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 90%;
+        padding: 10px 16px;
+    }
+    
+    footer .bottom .right label {
+        padding: 0;
+    }
+    
+    footer .bottom .right div {
+        padding: 0 25px;
+    }
+    /* ТЕЛ. */
+    
+    @media screen and (max-width:500px) {
+        header .account {
+            justify-content: space-between;
+        }
+        header .account .currency select {
+            background-color: transparent;
+        }
+        header .account .login {
+            justify-content: space-between;
+        }
+        header .account .login a,
+        label {
+            padding: 13.5px 2px;
+        }
+        header .account .login label :before {
+            margin-right: 10px;
+        }
+        main {
+            height: 350px;
+        }
+        main .head p {
+            margin: 10px;
+        }
+        main nav ul {
+            display: block;
+            text-align: right;
+            margin-right: 5px;
+        }
+        main nav ul li {
+            width: 40%;
+            text-align: end;
+            position: relative;
+            left: 60%;
+        }
+        main nav ul input {
+            margin-right: 0px;
+            margin-left: 20px;
+            width: 60%;
+        }
+        main nav ul ol {
+            position: absolute;
+            right: 170%;
+            z-index: 4;
+        }
+        main nav ul ol section {
+            position: relative;
+            background-color: #ffffff;
+            display: block;
+            text-align: center;
+        }
+        main nav ul ol section div {
+            margin: 0px;
+            padding: 0 20px 20px 20px;
+        }
+        main nav ul ol section div li {
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer .top {
+            padding-left: 25px;
+        }
+    }

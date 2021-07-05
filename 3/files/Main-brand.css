@@ -1,0 +1,258 @@
+aside {
+    padding-top: 65px;
+    background-color: #ffffff;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside p {
+    color: #333;
+}
+
+aside .blue {
+    color: #00c8c8;
+}
+
+aside .main {
+    width: 72%;
+}
+
+@media screen and (min-width:500px) {
+    aside .main {
+        width: 70%;
+    }
+    @media screen and (min-width:1020px) {
+        aside .main {
+            min-width: 1000px;
+        }
+    }
+}
+
+@media screen and (max-width:1020px) {
+    aside .main .top {
+        display: block;
+    }
+    aside .main .bottom {
+        display: block;
+    }
+    aside .main .top .text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+aside .l {
+    width: 1px;
+}
+
+aside .r {
+    width: 1px;
+}
+
+aside .top {
+    padding-top: 20px;
+    display: block;
+}
+
+@media screen and (min-width:500px) {
+    aside .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    aside .top .pic-one {
+        width: 48%;
+    }
+}
+
+aside .top .pic-one {
+    background-image: url(./images/2.brand/pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media screen and (min-width:1020px) {
+    aside .top .text {
+        width: 48%;
+    }
+}
+
+aside .top .text {
+    margin-left: 40px;
+    text-align: start;
+    padding-bottom: 10px;
+    color: #575153;
+    background-color: #ffffff;
+}
+
+aside section .text h4 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+aside section .text .bold {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+aside .bottom {
+    display: block;
+}
+
+@media screen and (min-width:1020px) {
+    aside .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    aside .left {
+        width: 48%;
+    }
+    aside .right {
+        width: 48%;
+    }
+}
+
+aside .left .pic-two {
+    margin-top: 50px;
+    background-image: url(./images/2.brand/pic-2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 200px;
+    height: 400px;
+}
+
+aside .left .text {
+    margin-top: 10px;
+    color: #575153;
+    background-color: #ffffff;
+}
+
+aside section p {
+    font-size: 15px;
+}
+
+aside section p.bold {
+    font-size: 13px;
+}
+
+@media screen and (min-width:1020px) {
+    aside .right {
+        position: relative;
+        bottom: 180px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    aside .right {
+        position: relative;
+        bottom: 40px;
+    }
+}
+
+aside .right .pic-three {
+    margin-top: 50px;
+    background-image: url(./images/2.brand/pic-3.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media screen and (min-width:1020px) {
+    aside .right .pic-three {
+        padding: 200px;
+        height: 400px;
+        min-width: 400px;
+    }
+}
+
+aside .right .text {
+    margin-top: 25px;
+    color: #575153;
+    background-color: #ffffff;
+}
+
+aside .right .labels {
+    padding-top: 10px;
+    display: block;
+    margin-top: 75px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width:500px) {
+    aside .right .labels {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+aside .right .labels .l-one .pic {
+    background-image: url(./images/2.brand/REPLACE\ copy\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 12.5%;
+}
+
+aside .right .labels .l-two .pic {
+    background-image: url(./images/2.brand/REPLACE\ copy\ 4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+    padding: 12.5%;
+}
+
+aside .right .labels .l-three .pic {
+    background-image: url(./images/2.brand/REPLACE\ copy\ 5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 12.5%;
+}
+
+@media screen and (min-width:500px) {
+    aside .right .labels .l-one .pic {
+        padding: 75px 60px;
+        background-size: 100%;
+    }
+    aside .right .labels .l-two .pic {
+        padding: 75px 60px;
+        background-size: 100%;
+        background-position: center;
+    }
+    aside .right .labels .l-three .pic {
+        padding: 75px 60px;
+        background-size: 100%;
+    }
+}
+
+
+/* ТЕЛ. */
+
+@media screen and (max-width:500px) {
+    aside .top .text {
+        margin-left: 0px;
+    }
+    aside .right .labels {
+        margin-bottom: 50px;
+    }
+    aside .left .pic-two {
+        margin-top: 50px;
+        background-image: url(./images/2.brand/pic-2mob.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        padding-left: 200px;
+        height: 400px;
+    }
+}
