@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pip-boy 2000</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="shortcut icon" href="./pics/fallout-icon.jpg" type="/image/jpg" />
+</head>
+
+<body>
+
+    <main class='main-table' id='main-table'>
+
+        <header class="header font-yellow back-blue text-center">
+            Vault-tec
+        </header>
+
+        <section class="section-audio" id="section-audio">
+            <audio src="./music/Jo Stafford - Blue moon.mp3" class="audio" id="audio"></audio>
+            <div class="music-bar" id="music-bar">
+
+                <div class='music-list' id="music-list"></div>
+                <div class="div-time-controler">
+                    <p class="green time-controler-text" id="time-controler-text">0:00</p>
+                    <input type="range" class="audio-time-controler" id="audio-time-controler" min="0" title="0:00" value="0" />
+                    <div class="cube" id="cube"></div>
+                </div>
+                <div class="controlers-box" id="controlers">
+                    <figure class="repeat-controler repeat-not-active" id="repeat-controler" title="repeat this track"></figure>
+                    <figure class="audio-controler audio-pause" id="play-controler"></figure>
+                    <figure class="repeat-controler repeat-playlist-controler repeat-not-active" id="repeat-playlist-controler" title="repeat all tracks"></figure>
+                    <figure class="next-track-button" id="next-track-button"></figure>
+                </div>
+                <input type="range" class="volume-range" min="0" max="100" value="100" title="100" id="volume-range" />
+            </div>
+        </section>
+
+
+        <section class="main-section" id="main-section">
+            <aside class="section-left" id="section-left"></aside>
+            <aside class="section-right" id="section-right"></aside>
+        </section>
+
+        <footer class="footer green text-center" id="footer">
+            <div class="footer-arrows" id="footer-arrows"></div>
+            <p id='footer-text'> </p>
+        </footer>
+    </main>
+
+
+    <script src='main.js'></script>
+</body>
+
+</html>
