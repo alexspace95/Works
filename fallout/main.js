@@ -12,56 +12,42 @@ const textForFooter = [
 let countFooterText = 0;
 
 const daysOfCalendar = [{
-        month: 0,
-        day: 1,
-        events: 'New Year'
-    },
-    {
-        month: 0,
-        day: 7,
-        events: 'Christmas'
-    }, {
-        month: 0,
-        day: 14,
-        events: 'Old New Year'
-    }, {
-        month: 1,
-        day: 14,
-        events: `Valentine's Day`
-    }, {
-        month: 1,
-        day: 23,
-        events: `Defenders Day`
-    },
-    {
-        month: 2,
-        day: 8,
-        events: `International Women's Day`
-    }, {
-        month: 2,
-        day: 25,
-        events: `Freedom Day of Belarus`
-    },
-    {
-        month: 3,
-        day: 12,
-        events: `International Day of Human Space Flight `
-    },
-    {
-        month: 3,
-        day: 12,
-        events: `International Day of Human Space Flight `
-    }, {
-        month: 9,
-        day: 23,
-        events: 'Great War'
-    },
-    {
-        month: 11,
-        day: 5,
-        events: 'Vault Dweller leaved the Vault 13'
-    }
-];
+    month: 0,
+    day: 1,
+    events: 'New Year'
+}, {
+    month: 0,
+    day: 7,
+    events: 'Christmas'
+}, {
+    month: 0,
+    day: 14,
+    events: 'Old New Year'
+}, {
+    month: 1,
+    day: 14,
+    events: `Valentine's Day`
+}, {
+    month: 1,
+    day: 23,
+    events: `Defenders Day`
+}, {
+    month: 2,
+    day: 8,
+    events: `International Women's Day`
+}, {
+    month: 3,
+    day: 12,
+    events: `International Day of Human Space Flight `
+}, {
+    month: 9,
+    day: 23,
+    events: 'Great War'
+}, {
+    month: 11,
+    day: 5,
+    events: 'Vault Dweller leaved the Vault 13'
+}];
 
 const musicSRC = [{
     name: 'Jo Stafford - Blue moon',
