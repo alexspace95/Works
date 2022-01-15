@@ -187,14 +187,9 @@ function cancelUnit(e) {
     const elem = e.target;
     if (elem.getAttribute('class') == 'colored active') {
         elem.setAttribute('class', `${players[playerCount]}`);
-        const canCells = this.getElementsByClassName('colored can-move');
-        const N = canCells.length;
-        for (let i = 0; i < N; i++) {
-            canCells[0].setAttribute('class', 'colored');
-        }
         this.removeEventListener('click', cancelUnit);
         this.addEventListener('click', searchPiece);
-        deleteMovingCells()
+        deleteMovingCells();
         deleteCanAtackCells();
     }
 
@@ -204,13 +199,6 @@ function moveThisPiece(e) {
     const elem = e.target;
 
     if (elem.getAttribute('class') == 'colored can-move') {
-        const canCells = this.getElementsByClassName('colored can-move');
-        const N = canCells.length;
-
-        for (let i = 0; i < N; i++) {
-            canCells[0].setAttribute('class', 'colored');
-        }
-
         const canActiveCell = this.getElementsByClassName('colored active');
         canActiveCell[0].setAttribute('class', 'colored');
 
@@ -226,14 +214,16 @@ function moveThisPiece(e) {
 
 function deleteMovingCells() {
     const canMoveList = document.getElementsByClassName('colored can-move');
-    for (let i = 0; i < canMoveList.length; i++) {
+    const N = canMoveList.length;
+    for (let i = 0; i < N; i++) {
         canMoveList[0].setAttribute('class', 'colored');
     }
 }
 
 function deleteCanAtackCells() {
     const canCanAtackList = document.getElementsByClassName('colored can-atack');
-    for (let i = 0; i < canCanAtackList.length; i++) {
+    const N = canCanAtackList.length;
+    for (let i = 0; i < N; i++) {
         canCanAtackList[0].setAttribute('class', 'colored');
     }
 }
